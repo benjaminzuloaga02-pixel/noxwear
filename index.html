@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOXWEAR</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(to bottom,#000,#1a1a1a);
+}
+
+header h1{
+    font-size:4rem;
+    letter-spacing:5px;
+}
+
+header p{
+    margin-top:15px;
+    color:#bbb;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.productos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.producto{
+    background:#1c1c1c;
+    width:280px;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.producto:hover{
+    transform:translateY(-8px);
+}
+
+.producto img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.producto h3{
+    padding:15px;
+}
+
+.producto p{
+    padding:0 15px 15px;
+    color:#aaa;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #333;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>NOXWEAR</h1>
+    <p>Vestí el futuro.</p>
+    <a class="btn" href="#coleccion">Ver colección</a>
+</header>
+
+<section id="coleccion">
+    <h2 class="titulo">Nueva colección</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800" alt="">
+            <h3>Remera Eclipse</h3>
+            <p>$24.999</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800" alt="">
+            <h3>Buzo Phantom</h3>
+            <p>$49.999</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=800" alt="">
+            <h3>Campera Nova</h3>
+            <p>$79.999</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    Sitio de demostración • NOXWEAR 2026
+</footer>
+
+</body>
+</html>
